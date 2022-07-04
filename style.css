@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: #009688;
+  position: relative;
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 20px;
+  font-size: 50px;
+  font-weight: bolder;
+  color: mistyrose;
+}
+
+
+/*Digital Clock Section*/
+
+.digital-clock {
+  font-size: 500%;
+  color: #f3971b;
+  border: 1px solid #f5f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0 5px 0 5px; */
+}
+
+/* Layout */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em;
+  /* justify-content: center; */
+  align-items: middle;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* Clock styles */
+.circle {
+  fill: none;
+  stroke: rgb(114, 10, 10);
+  stroke-width: 15;
+  stroke-miterlimit: 10;
+}
+
+.mid-circle {
+  fill: #000;
+}
+
+.hour-marks {
+  fill: none;
+  stroke: #000;
+  stroke-width: 9;
+  stroke-miterlimit: 10;
+}
+
+.hour-arm {
+  fill: none;
+  stroke: #000;
+  stroke-width: 17;
+  stroke-miterlimit: 10;
+}
+
+.minute-arm {
+  fill: none;
+  stroke: #000;
+  stroke-width: 11;
+  stroke-miterlimit: 10;
+}
+
+.second-arm {
+  fill: none;
+  stroke: aquamarine;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+  fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+  transform-origin: 300px 300px;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.bus-turn {
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.bus-turn-title {
+  color: aliceblue;
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bus-turn #firstbus {
+  color: chartreuse;
+  text-align: left;
+  margin: 10px;
+}
+
+.bus-turn #secondbus {
+  color: gold;
+  text-align: left;
+  margin: 10px;
+}
+
+#missing {
+  color: red;
+}
